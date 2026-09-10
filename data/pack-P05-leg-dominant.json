@@ -1,0 +1,70 @@
+{
+  "id": "P05",
+  "version": "2026-09-11",
+  "status": "frozen",
+  "everyday_title": "Leg-dominant back-related pain",
+  "clinical_subtitle": "Often called sciatica / nerve-root irritation (radicular pain) in education materials",
+  "region_tags": [
+    "low_back",
+    "leg"
+  ],
+  "results_header": "Here’s what this might relate to",
+  "why_it_might_fit": "Leg-dominant shooting pain or pins and needles with a back story is a pattern often discussed as nerve-root irritation (“sciatica”) education — not a personal diagnosis.",
+  "what_people_notice": [
+    "Pain may feel worse in the calf or leg than in the back.",
+    "Pins and needles or numbness in one leg or foot can occur.",
+    "Symptoms can travel along a path down the leg."
+  ],
+  "could_also_be": [
+    "Nerve-root irritation / radicular pain (“sciatica” education pattern)",
+    "Mechanical low-back pain with some leg referral (see also low-back pack)",
+    "Other nerve or soft-tissue patterns a clinician would differentiate",
+    "Urgent spinal neurological problems are why red flags are checked first"
+  ],
+  "what_this_is_not": [
+    "This is not automatically a problem that needs surgery.",
+    "“Disc” language carefully: discs do not “slip out” in the everyday sense.",
+    "Never treat this page as confirmation you have sciatica — a clinician confirms."
+  ],
+  "settle_expectation": "Leg-dominant nerve-type pain often improves over weeks to months for many people, but new bladder/bowel/saddle symptoms, sexual dysfunction, or weakness in both legs need urgent care — not watchful waiting.",
+  "soft_flags": [
+    "Progressive symptoms in one leg, spreading pain, or significant day-to-day decline — see a GP soon; physio can still help with assessment and advice when red flags are absent."
+  ],
+  "modules": {
+    "redflag": "shared-redflag-approved-A",
+    "include_spine_extra_rf": true,
+    "selfcare": "shared-selfcare-approved-B",
+    "include_optional_imaging_line": true,
+    "who_helps": "shared-who-helps-nz",
+    "disclaimer": "shared-disclaimer"
+  },
+  "trusted_links": [
+    {
+      "label": "Healthify — Back pain",
+      "url": "https://healthify.nz/health-a-z/b/back-pain",
+      "tier": "nz_primary"
+    },
+    {
+      "label": "Health NZ — Low back pain",
+      "url": "https://www.healthnz.govt.nz/health-topics/conditions-treatments/bones-and-joints/low-back-pain",
+      "tier": "nz_primary"
+    },
+    {
+      "label": "NHS — Sciatica (depth)",
+      "url": "https://www.nhs.uk/conditions/sciatica/",
+      "tier": "depth",
+      "caveat": "Pathways can differ from NZ care."
+    },
+    {
+      "label": "NICE CKS — Sciatica red flags",
+      "url": "https://cks.nice.org.uk/topics/sciatica/diagnosis/red-flag-symptoms-signs/",
+      "tier": "safety_depth",
+      "caveat": "Pathways can differ from NZ care."
+    }
+  ],
+  "citations_internal": [
+    "https://www.nhs.uk/conditions/sciatica/",
+    "https://cks.nice.org.uk/topics/sciatica/diagnosis/red-flag-symptoms-signs/",
+    "https://healthify.nz/health-a-z/b/back-pain"
+  ]
+}

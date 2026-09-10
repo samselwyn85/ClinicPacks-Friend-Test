@@ -1,0 +1,110 @@
+{
+  "id": "shared-redflag-approved-A",
+  "version": "2026-09-11",
+  "status": "frozen",
+  "source_doc": "/workspace/physio-research/06-COPY-SIGNOFF-redflags-selfcare.md",
+  "gate": {
+    "screen_title": "Safety check",
+    "intro": "Before we continue — have you noticed any of these?",
+    "logic": "any_yes_hard_stop",
+    "none_cta": "None of these",
+    "items": [
+      {
+        "id": "rf_bladder_bowel_saddle_sexual",
+        "label_short": "Bladder/bowel change, saddle numbness, or new sexual dysfunction",
+        "label_full": "Trouble starting or controlling wee or bowel motions, or numbness around your bottom or genitals — including new problems with sexual sensation or erection."
+      },
+      {
+        "id": "rf_bilateral_weakness_walk",
+        "label_short": "New weakness in both legs / can’t walk as usual",
+        "label_full": "New weakness in both legs, or you are suddenly struggling to walk (much worse than your usual)."
+      },
+      {
+        "id": "rf_chest_sob",
+        "label_short": "Chest pain, pressure, or shortness of breath",
+        "label_full": "Chest pain or pressure, or shortness of breath — including if it comes with shoulder, arm, or neck symptoms."
+      },
+      {
+        "id": "rf_hot_joint_fever",
+        "label_short": "Hot, red, very swollen joint + feverish/unwell",
+        "label_full": "A joint that is hot, red, and very swollen, and you feel feverish or very unwell."
+      },
+      {
+        "id": "rf_trauma_deformity_wb",
+        "label_short": "After injury: deformity or can’t weight-bear",
+        "label_full": "After a fall, bang, or twist: the limb or joint looks the wrong shape, or you cannot put weight on it."
+      },
+      {
+        "id": "rf_thunderclap_meningitis",
+        "label_short": "Thunderclap headache, or headache + fever + stiff neck",
+        "label_full": "Sudden “worst ever” headache (especially if it peaked within minutes), or headache with fever and a stiff neck."
+      },
+      {
+        "id": "rf_weight_loss_night_pain",
+        "label_short": "Unexplained weight loss, or night pain that never eases with position",
+        "label_full": "Unexplained weight loss, or constant night pain that never eases no matter how you lie."
+      }
+    ],
+    "spine_extra_item": {
+      "id": "rf_sciatica_became_bilateral",
+      "applies_to_packs": [
+        "P01",
+        "P05"
+      ],
+      "label_short": "Leg pain that was one side and is now both legs",
+      "label_full": "Pain, pins and needles, or numbness that started in one leg and has spread to both legs.",
+      "note": "NICE CKS warning feature; include on back/sciatica paths."
+    }
+  },
+  "hard_stop_screen": {
+    "title": "Please get checked now",
+    "lead": "Some symptoms need a clinician today — not more reading here.",
+    "body": "Based on what you selected, it’s safest to seek urgent care or call for advice. Symptoms like these are treated as urgent until a clinician says otherwise. This tool cannot assess emergencies.",
+    "actions": [
+      {
+        "id": "call_111",
+        "label": "Call 111 if it’s an emergency",
+        "href": "tel:111"
+      },
+      {
+        "id": "ed_urgent",
+        "label": "Go to ED / urgent care",
+        "href": null
+      },
+      {
+        "id": "healthline",
+        "label": "Call Healthline 0800 611 116 (24/7)",
+        "href": "tel:0800611116"
+      }
+    ],
+    "hide_on_this_screen": [
+      "find_a_physio"
+    ],
+    "calm_closer": "You’re not overreacting by checking. Better safe.",
+    "disclaimer_line": "This tool can’t assess emergencies or give a diagnosis.",
+    "back_link": "Change my answers"
+  },
+  "soft_flags_not_hard_stop": [
+    "Progressive weakness in one limb only",
+    "Night pain that is troublesome but eases when you change position",
+    "History of cancer with new bone or spinal pain but no other hard-flag ticks — show Worth getting checked soon banner, not hard stop alone"
+  ],
+  "citations": [
+    {
+      "label": "NICE CKS Sciatica red flags",
+      "url": "https://cks.nice.org.uk/topics/sciatica/diagnosis/red-flag-symptoms-signs/"
+    },
+    {
+      "label": "Healthify Back pain",
+      "url": "https://healthify.nz/health-a-z/b/back-pain"
+    },
+    {
+      "label": "Health NZ Low back pain",
+      "url": "https://www.healthnz.govt.nz/health-topics/conditions-treatments/bones-and-joints/low-back-pain"
+    },
+    {
+      "label": "IFOMPT red-flag framework",
+      "url": "https://www.jospt.org/doi/10.2519/jospt.2020.9971"
+    }
+  ]
+}

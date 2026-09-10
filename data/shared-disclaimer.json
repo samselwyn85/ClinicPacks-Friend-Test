@@ -1,0 +1,15 @@
+{
+  "id": "shared-disclaimer",
+  "version": "2026-09-11",
+  "status": "frozen",
+  "strings": {
+    "footer_chip": "Education only · Not a diagnosis",
+    "modal_or_about": "This helps you learn about common muscle and joint issues. It is not a diagnosis, treatment plan, or emergency service. If you’re worried, or something feels seriously wrong, get medical help.",
+    "results_subhead": "Based on common patterns people describe — not a personal diagnosis.",
+    "results_footer": "This is education, not a diagnosis or treatment plan. If you’re worried, get checked.",
+    "language_locks": [
+      "Use: often linked with / people sometimes call this / a clinician would check for",
+      "Never: You have… / This is… / % chance / probability bars"
+    ]
+  }
+}

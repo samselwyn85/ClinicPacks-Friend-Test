@@ -1,0 +1,68 @@
+{
+  "id": "P01",
+  "version": "2026-09-11",
+  "status": "frozen",
+  "everyday_title": "Irritable low back after load",
+  "clinical_subtitle": "Often discussed as non-specific / mechanical low back pain",
+  "region_tags": [
+    "low_back"
+  ],
+  "results_header": "Here’s what this might relate to",
+  "why_it_might_fit": "You described back-focused pain that changed with movement or activity — a common pattern discussed in mechanical low-back education.",
+  "what_people_notice": [
+    "Pain or stiffness in the lower back; it may spread toward the buttock.",
+    "Moving, bending, or sitting can change how it feels.",
+    "Many similar episodes improve over weeks with sensible activity — a clinician still decides what’s right for you."
+  ],
+  "could_also_be": [
+    "Non-specific / mechanical low back pain (most common education pattern)",
+    "Nerve-root irritation / “sciatica”-type leg pain (see also leg-dominant pack)",
+    "Less often: other spinal or referred patterns a clinician would consider",
+    "Rare serious causes are why the red-flag check comes first"
+  ],
+  "what_this_is_not": [
+    "This is not a diagnosis of a “slipped disc” or any specific injury.",
+    "Scan findings are common with age and do not always match pain.",
+    "A clinician would confirm what’s going on for you."
+  ],
+  "settle_expectation": "Many people with common low-back pain improve over weeks to a few months with sensible activity. Flare-ups and repeat episodes are common.",
+  "soft_flags": [
+    "Disabling pain, work or sleep impact, or not improving after a few weeks of sensible self-care — see a physiotherapist or GP."
+  ],
+  "modules": {
+    "redflag": "shared-redflag-approved-A",
+    "include_spine_extra_rf": true,
+    "selfcare": "shared-selfcare-approved-B",
+    "include_optional_imaging_line": true,
+    "who_helps": "shared-who-helps-nz",
+    "disclaimer": "shared-disclaimer"
+  },
+  "trusted_links": [
+    {
+      "label": "Healthify — Back pain",
+      "url": "https://healthify.nz/health-a-z/b/back-pain",
+      "tier": "nz_primary"
+    },
+    {
+      "label": "Health NZ — Low back pain",
+      "url": "https://www.healthnz.govt.nz/health-topics/conditions-treatments/bones-and-joints/low-back-pain",
+      "tier": "nz_primary"
+    },
+    {
+      "label": "bpacnz — Low back pain",
+      "url": "https://bpac.org.nz/2022/low-back-pain.aspx",
+      "tier": "nz_secondary"
+    },
+    {
+      "label": "NICE NG59 — Low back pain and sciatica (guideline depth)",
+      "url": "https://www.nice.org.uk/guidance/ng59",
+      "tier": "depth",
+      "caveat": "Pathways can differ from NZ care."
+    }
+  ],
+  "citations_internal": [
+    "https://www.who.int/news-room/fact-sheets/detail/low-back-pain",
+    "https://healthify.nz/health-a-z/b/back-pain",
+    "https://www.nice.org.uk/guidance/ng59"
+  ]
+}

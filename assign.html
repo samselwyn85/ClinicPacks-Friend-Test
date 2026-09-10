@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0F766E" />
+  <title>Assign pack · ClinicPacks</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <div class="brand-mark">HP</div>
+        <div class="brand-text">
+          <strong>Harbour Physio</strong>
+          <span>Grey Lynn · ClinicPacks</span>
+        </div>
+      </a>
+      <span class="chip">Clinician view</span>
+    </header>
+
+    <section class="hero">
+      <h1>Assign education pack</h1>
+      <p>Fake clinician screen for the friend pilot. Share a relative link or show the QR placeholder.</p>
+    </section>
+
+    <div class="card">
+      <label class="section-label" for="packSelect">Pack</label>
+      <select id="packSelect" style="width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);font-size:1rem;margin-top:6px">
+        <option value="P01">P01 — Irritable low back after load</option>
+        <option value="P05">P05 — Leg-dominant back-related pain</option>
+      </select>
+
+      <div class="qr-box" id="qrBox" aria-hidden="true">QR<br/>placeholder<br/><span id="qrLabel">/p/P01/</span></div>
+
+      <div class="section-label">Copyable relative link</div>
+      <div class="copy-row">
+        <input id="linkField" readonly value="/p/P01/" />
+        <button type="button" id="copyBtn">Copy</button>
+      </div>
+      <p class="small muted">Patients open the link on their phone — no login.</p>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" id="openLink" href="/p/P01/">Open as patient</a>
+        <a class="btn btn-secondary" href="/preview.html">Clinic preview</a>
+      </div>
+    </div>
+
+    <div class="nav-mini">
+      <a href="/">Landing</a>
+    </div>
+    <p class="footer-chip">Education only · Not a diagnosis</p>
+  </div>
+  <div class="toast" id="toast">Copied</div>
+  <script>
+    const select = document.getElementById('packSelect');
+    const field = document.getElementById('linkField');
+    const openLink = document.getElementById('openLink');
+    const qrLabel = document.getElementById('qrLabel');
+    const toast = document.getElementById('toast');
+    function sync() {
+      const path = '/p/' + select.value + '/';
+      field.value = path;
+      openLink.href = path;
+      qrLabel.textContent = path;
+    }
+    select.addEventListener('change', sync);
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(field.value);
+      } catch (e) {
+        field.select();
+        document.execCommand('copy');
+      }
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 1400);
+    });
+    sync();
+  </script>
+</body>
+</html>

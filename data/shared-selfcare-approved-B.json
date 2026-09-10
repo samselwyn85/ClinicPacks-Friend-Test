@@ -1,0 +1,37 @@
+{
+  "id": "shared-selfcare-approved-B",
+  "version": "2026-09-11",
+  "status": "frozen",
+  "source_doc": "/workspace/physio-research/06-COPY-SIGNOFF-redflags-selfcare.md",
+  "section_title": "Sensible next steps while you decide",
+  "intro": "General education only — not a personal plan. A physiotherapist or GP can tailor advice for you.",
+  "bullets": [
+    "For common back, neck, and similar aches: keep gently moving within what you can manage; long bed rest usually isn’t helpful.",
+    "Ease back into usual activity using short bouts if needed. Some discomfort can be OK; stop and get advice if pain sharply worsens, or you get new weakness, numbness, chest symptoms, or other red-flag signs.",
+    "Ice or heat is fine if it comforts you — protect your skin, and don’t treat it as a cure. For recent soft-tissue injuries, follow clinician or Healthify soft-tissue advice (PEACE & LOVE), not prolonged icing as the main plan.",
+    "If this started after an accident or injury in New Zealand, ACC may be relevant — see the trusted ACC link. ACC does not cover every gradual or illness-related problem (for example, many osteoarthritis presentations)."
+  ],
+  "optional_fifth_if_space": "Scans are often unnecessary for common back pain without red flags — ask a clinician before chasing imaging.",
+  "citations": [
+    {
+      "label": "WHO Low back pain",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/low-back-pain"
+    },
+    {
+      "label": "NICE NG59",
+      "url": "https://www.nice.org.uk/guidance/ng59"
+    },
+    {
+      "label": "Healthify Back pain",
+      "url": "https://healthify.nz/health-a-z/b/back-pain"
+    },
+    {
+      "label": "Healthify PEACE and LOVE",
+      "url": "https://healthify.nz/health-a-z/p/peace-and-love-and-ricer"
+    },
+    {
+      "label": "ACC I’m injured",
+      "url": "https://www.acc.co.nz/im-injured"
+    }
+  ]
+}

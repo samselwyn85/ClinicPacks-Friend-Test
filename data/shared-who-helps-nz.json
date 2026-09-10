@@ -1,0 +1,39 @@
+{
+  "id": "shared-who-helps-nz",
+  "version": "2026-09-11",
+  "status": "frozen",
+  "section_title": "Who can help (Aotearoa New Zealand)",
+  "body": "In Aotearoa you can often see a physiotherapist without a GP referral. A GP is a good next step if you’re unsure, unwell, or have other health conditions. Use ED or call 111 for emergencies. Healthline 0800 611 116 can advise 24/7.",
+  "soft_when_to_get_help": {
+    "title": "When to get help",
+    "soon": "See a physiotherapist or GP if pain is getting worse, messing with sleep or work, or not settling over a few weeks.",
+    "now": "Use the urgent list or Healthline if new red-flag symptoms appear."
+  },
+  "soft_banner": {
+    "title": "Worth getting checked soon",
+    "body": "Your answers don’t sound like an emergency from this checklist, but a physiotherapist or GP can assess you properly — especially if pain is lasting, worsening, or limiting daily life."
+  },
+  "links": [
+    {
+      "label": "What a physiotherapist does (Healthify)",
+      "url": "https://healthify.nz/hauora-wellbeing/p/physiotherapist",
+      "primary": true
+    },
+    {
+      "label": "Find a NZ physio (PNZ)",
+      "url": "https://physio.org.nz/about-physiotherapy/find-a-physio/",
+      "primary": true
+    },
+    {
+      "label": "ACC — I’m injured",
+      "url": "https://www.acc.co.nz/im-injured",
+      "primary": true,
+      "show_when": "injury_onset"
+    },
+    {
+      "label": "Healthline",
+      "url": "tel:0800611116",
+      "primary": true
+    }
+  ]
+}
