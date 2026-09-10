@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0F766E" />
+  <title>ClinicPacks — what it is &amp; how it makes money</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <style>
+    .app-shell { max-width: 560px; }
+    .section-label {
+      margin: 22px 0 8px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .card ul.plain {
+      margin: 8px 0 0;
+      padding-left: 1.15rem;
+    }
+    .card ul.plain li { margin: 8px 0; }
+    .not-list {
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .not-list li {
+      margin: 6px 0;
+      padding: 8px 12px;
+      background: #F8FAF9;
+      border-left: 3px solid var(--line);
+      border-radius: 0 10px 10px 0;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+    .not-list li strong { color: var(--ink); }
+
+    /* Flow diagrams */
+    .flow {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      margin: 12px 0 4px;
+    }
+    .flow-step {
+      background: linear-gradient(180deg, #F0FDFA 0%, #fff 70%);
+      border: 2px solid var(--teal);
+      border-radius: 14px;
+      padding: 12px 14px;
+      text-align: center;
+      font-weight: 650;
+      font-size: 0.92rem;
+      color: var(--ink);
+      box-shadow: var(--shadow);
+    }
+    .flow-step.money {
+      border-color: var(--teal-dark);
+      background: linear-gradient(180deg, #CCFBF1 0%, #fff 65%);
+    }
+    .flow-step.free {
+      border-color: #99F6E4;
+      background: #fff;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .flow-arrow {
+      align-self: center;
+      color: var(--teal);
+      font-size: 1.25rem;
+      line-height: 1;
+      padding: 4px 0;
+      font-weight: 700;
+    }
+    .price-grid {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .price-card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      background: #fff;
+    }
+    .price-card.featured {
+      border-color: var(--teal);
+      background: linear-gradient(180deg, #F0FDFA 0%, #fff 55%);
+    }
+    .price-card .tier {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: var(--teal);
+    }
+    .price-card .amount {
+      font-size: 1.35rem;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      margin: 4px 0 2px;
+      color: var(--ink);
+    }
+    .price-card .note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    .link-list a {
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      color: inherit;
+      font-weight: 650;
+    }
+    .link-list a:last-child { border-bottom: none; }
+    .link-list a span {
+      display: block;
+      font-weight: 500;
+      font-size: 0.78rem;
+      color: var(--muted);
+      word-break: break-all;
+      margin-top: 2px;
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .pill {
+      background: var(--teal-soft);
+      color: var(--teal-dark);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      font-weight: 650;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <div class="brand-mark">HP</div>
+        <div class="brand-text">
+          <strong>Harbour Physio</strong>
+          <span>Grey Lynn · ClinicPacks</span>
+        </div>
+      </a>
+      <span class="chip">Business</span>
+    </header>
+
+    <section class="hero">
+      <div class="chip" style="margin-bottom:10px">Share with team</div>
+      <h1>ClinicPacks — what it is &amp; how it makes money</h1>
+      <p>Plain-English overview for NZ physio friends. Education product — not a diagnosis service.</p>
+    </section>
+
+    <!-- 1 -->
+    <div class="section-label">1 · What it means (simple)</div>
+    <div class="card">
+      <h2>In one breath</h2>
+      <ul class="plain">
+        <li>Clinics brand short <strong>patient education packs</strong> (MSK / ACC-safe info).</li>
+        <li>Patients get calm “what this might relate to” + a <strong>red-flag safety check</strong> + NZ trusted links.</li>
+        <li>Community gets better info; clinics look professional between visits.</li>
+      </ul>
+      <p class="small muted" style="margin-top:12px;margin-bottom:4px"><strong>What it is not</strong></p>
+      <ul class="not-list">
+        <li><strong>Not</strong> a diagnosis app</li>
+        <li><strong>Not</strong> a HEP / exercise video library</li>
+        <li><strong>Not</strong> a practice management system (PMS)</li>
+      </ul>
+    </div>
+
+    <!-- 2 -->
+    <div class="section-label">2 · Simple flow</div>
+    <div class="card">
+      <h2>Patient journey</h2>
+      <div class="flow" aria-label="Patient flow">
+        <div class="flow-step">Patient sore</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">Clinic assigns branded link / QR</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">Safety check</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">Education <em>or</em> urgent care</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">Clinic sees usage</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step money">Clinic pays monthly</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Money flow</h2>
+      <div class="flow" aria-label="Money flow">
+        <div class="flow-step money">Clinic pays SaaS</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">We maintain packs + product</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step free">Patients get free education</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">Clinic retains patients / less PDF chaos</div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="section-label">3 · How we generate money</div>
+    <div class="card">
+      <h2>Who pays</h2>
+      <p><strong>NZ physio clinics (B2B)</strong> — not patients. Patients always get the education free.</p>
+      <div class="price-grid">
+        <div class="price-card">
+          <div class="tier">Solo</div>
+          <div class="amount">~NZ$39/mo</div>
+          <p class="note">Single clinician</p>
+        </div>
+        <div class="price-card featured">
+          <div class="tier">Clinic ≤5</div>
+          <div class="amount">~NZ$99/mo</div>
+          <p class="note">Small clinic team</p>
+        </div>
+        <div class="price-card">
+          <div class="tier">Group</div>
+          <div class="amount">~$19/seat</div>
+          <p class="note">Min NZ$149/mo</p>
+        </div>
+      </div>
+      <ul class="plain">
+        <li>Pilots can start <strong>free</strong>, then convert.</li>
+        <li>Optional later: niche CPD for clinicians (secondary income).</li>
+      </ul>
+    </div>
+
+    <!-- 4 -->
+    <div class="section-label">4 · How it stays sustainable</div>
+    <div class="card">
+      <h2>Why this can last</h2>
+      <ul class="plain">
+        <li><strong>Recurring subscription</strong> — not one-off projects.</li>
+        <li><strong>Low marginal cost</strong> — same packs, many clinics (white-label).</li>
+        <li><strong>Content governance</strong> — research-frozen education; NZ-licensed physio friends / academic input.</li>
+        <li><strong>Stay narrow</strong> — education + red flags + assign/track. Don’t clone Physitrack or Cliniko.</li>
+        <li><strong>Growth path</strong> — more packs → more clinics → ACC / employer later.</li>
+        <li><strong>Costs</strong> — hosting, clinical review, sales/support.</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill">SaaS recurring</span>
+        <span class="pill">White-label packs</span>
+        <span class="pill">Narrow scope</span>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="section-label">5 · Why now</div>
+    <div class="card">
+      <h2>Timing</h2>
+      <ul class="plain">
+        <li>Digital MSK care is growing; NZ ACC education / telehealth tailwinds.</li>
+        <li>Clinics already buy tools — we are a <strong>cheaper education add-on</strong>, not another full stack.</li>
+      </ul>
+    </div>
+
+    <!-- 6 -->
+    <div class="section-label">6 · Links</div>
+    <div class="card">
+      <h2>Try it / share it</h2>
+      <div class="link-list">
+        <a href="https://friend-test-production.up.railway.app/team-guide.html">Team test guide<span>https://friend-test-production.up.railway.app/team-guide.html</span></a>
+        <a href="https://friend-test-production.up.railway.app/">Friend-test<span>https://friend-test-production.up.railway.app/</span></a>
+        <a href="https://web-production-2baf31.up.railway.app/">Full app<span>https://web-production-2baf31.up.railway.app/</span></a>
+      </div>
+    </div>
+
+    <div class="nav-mini">
+      <a href="/">← Friend-test landing</a>
+      <a href="/team-guide.html">Team test guide</a>
+    </div>
+    <p class="footer-chip">Education product · Not a diagnosis service</p>
+    <p class="small muted" style="text-align:center">Harbour Physio Grey Lynn · ClinicPacks · teal #0F766E</p>
+  </div>
+</body>
+</html>
