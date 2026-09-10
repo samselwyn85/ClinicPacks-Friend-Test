@@ -6,6 +6,7 @@ Frozen Research copy from `physio-research/mvp-copy/v1/` (P01, P05, Approved A/B
 
 ## Routes
 - `/` landing
+- `/guide.html` tester guide (how to navigate + what feedback Sam wants)
 - `/preview.html` clinic preview
 - `/assign.html` fake assign + QR
 - `/p/P01/` and `/p/P05/` patient journeys

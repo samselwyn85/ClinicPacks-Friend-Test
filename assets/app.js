@@ -101,7 +101,10 @@
             <span>${CLINIC.suburb} · ClinicPacks</span>
           </div>
         </a>
-        <span class="chip">${state.disclaimer.strings.footer_chip}</span>
+        <div class="topbar-actions">
+          <a class="help-link" href="/guide.html">Help</a>
+          <span class="chip">${state.disclaimer.strings.footer_chip}</span>
+        </div>
       </header>
       ${progressDots(stepIndex)}
       ${inner}
@@ -117,6 +120,7 @@
           <h1>${state.pack.everyday_title}</h1>
           <p>${state.pack.clinical_subtitle}</p>
         </div>
+        <p class="step-help">Next: a short “from your clinician” screen, then a safety check. Tap Continue when ready. <a href="/guide.html">How this works</a></p>
         <div class="card">
           <p class="small muted">${state.disclaimer.strings.modal_or_about}</p>
         </div>
@@ -168,6 +172,7 @@
           <h1>${state.redflag.gate.screen_title}</h1>
           <p>${state.redflag.gate.intro}</p>
         </div>
+        <p class="step-help">Answer Yes or No for each item. For the friend test: try one Yes (hard stop), then all No (results). <a href="/guide.html">How this works</a></p>
         <div class="card" style="padding-top:4px;padding-bottom:4px">${items}</div>
         <div class="btn-row">
           <button class="btn btn-primary" id="rf-continue" ${allAnswered() ? "" : "disabled"} style="${allAnswered() ? "" : "opacity:.5"}">

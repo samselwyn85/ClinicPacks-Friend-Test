@@ -374,3 +374,52 @@ button { font-family: inherit; }
 @media (min-width: 640px) {
   .app-shell { padding-top: 12px; }
 }
+
+
+/* Friend-test help / guide UX */
+.help-blurb {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.guide-cta {
+  display: inline-flex;
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: var(--teal-soft);
+  color: var(--teal-dark);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  border: 1px solid #99F6E4;
+}
+.guide-cta:hover { background: #B2F5EA; }
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.help-link {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--teal-dark);
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: white;
+}
+.help-link:hover { border-color: var(--teal-mid); background: var(--teal-soft); }
+.step-help {
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  background: var(--teal-soft);
+  border: 1px solid #99F6E4;
+  border-radius: 12px;
+  color: var(--teal-dark);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+.step-help a { font-weight: 700; }
