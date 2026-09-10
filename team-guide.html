@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0F766E" />
+  <title>ClinicPacks — team test guide</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <style>
+    .path-pick { display: grid; gap: 12px; margin-top: 8px; }
+    .path-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: var(--card);
+      border: 2px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .path-card.primary {
+      border-color: var(--teal);
+      background: linear-gradient(180deg, #F0FDFA 0%, #fff 60%);
+    }
+    .path-card .do-first {
+      display: inline-block;
+      background: var(--teal);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      padding: 5px 10px;
+      margin-bottom: 8px;
+    }
+    .path-card .do-second {
+      display: inline-block;
+      background: var(--teal-soft);
+      color: var(--teal-dark);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      padding: 5px 10px;
+      margin-bottom: 8px;
+    }
+    .path-card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+    .path-card p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    .path-card .cta {
+      margin-top: 12px;
+      color: var(--teal);
+      font-weight: 650;
+      font-size: 0.9rem;
+    }
+    .steps { margin: 0; padding-left: 1.25rem; }
+    .steps li { margin: 10px 0; }
+    .steps a { font-weight: 650; word-break: break-all; }
+    .cred {
+      background: var(--teal-soft);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin: 10px 0;
+      font-size: 0.92rem;
+    }
+    .cred code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.88rem;
+      background: #fff;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+    .link-block { margin-top: 10px; }
+    .link-block h3 {
+      margin: 14px 0 8px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <div class="brand-mark">HP</div>
+        <div class="brand-text">
+          <strong>Harbour Physio</strong>
+          <span>Grey Lynn · ClinicPacks</span>
+        </div>
+      </a>
+      <span class="chip">Team guide</span>
+    </header>
+
+    <section class="hero">
+      <div class="chip" style="margin-bottom:10px">One page for testers</div>
+      <h1>ClinicPacks — team test guide</h1>
+      <p>Pick <strong>one</strong> path below. Most people should use Friend-test first.</p>
+    </section>
+
+    <!-- 1. Start here -->
+    <div class="section-label">1 · Start here (pick one path)</div>
+    <div class="path-pick">
+      <a class="path-card primary" href="https://friend-test-production.up.railway.app/">
+        <span class="do-first">Do this first</span>
+        <h3>Friend-test (guided patient flows)</h3>
+        <p>Best for most people and your first test. Walk a patient pack, try the safety check, read results.</p>
+        <div class="cta">Open friend-test landing →</div>
+      </a>
+      <a class="path-card" href="https://web-production-2baf31.up.railway.app/login">
+        <span class="do-second">Path 2 · clinicians</span>
+        <h3>Full app (clinic dashboard)</h3>
+        <p>Only if you want to log in, assign a pack, and open a patient link.</p>
+        <div class="cta">Open clinic login →</div>
+      </a>
+    </div>
+
+    <!-- 2. Friend-test workflow -->
+    <div class="section-label">2 · Simple workflow (friend-test)</div>
+    <div class="card">
+      <h2>Numbered steps</h2>
+      <ol class="steps">
+        <li>Open the <a href="https://friend-test-production.up.railway.app/">friend-test landing</a>.</li>
+        <li>Optional: skim the <a href="https://friend-test-production.up.railway.app/guide.html">How to use guide</a>.</li>
+        <li>Run <a href="https://friend-test-production.up.railway.app/p/P01/">P01 low back</a>.</li>
+        <li>On the safety check: try <strong>ONE Yes</strong> (you should get a hard stop), then go back and answer <strong>No / none</strong>.</li>
+        <li>Read the results screen.</li>
+        <li>Optional: try <a href="https://friend-test-production.up.railway.app/p/P05/">P05</a>.</li>
+        <li>Send feedback to Sam (see below).</li>
+      </ol>
+    </div>
+
+    <!-- 3. Clinic dashboard -->
+    <div class="section-label">3 · Clinic dashboard path</div>
+    <div class="card">
+      <h2>Login + assign</h2>
+      <p>Use this only after (or instead of) friend-test if you want the clinician side.</p>
+      <div class="cred">
+        <div><strong>Login:</strong> <a href="https://web-production-2baf31.up.railway.app/login">web-production…/login</a></div>
+        <div style="margin-top:8px"><strong>Email:</strong> <code>demo@clinicpacks.nz</code></div>
+        <div style="margin-top:6px"><strong>Password:</strong> <code>demo1234</code></div>
+      </div>
+      <ol class="steps">
+        <li>Log in with the demo account.</li>
+        <li>Assign a pack to a patient.</li>
+        <li>Open the patient link (or try the demo links below).</li>
+      </ol>
+    </div>
+
+    <!-- 4. All links -->
+    <div class="section-label">4 · All links in one place</div>
+    <div class="card">
+      <div class="link-block">
+        <h3>Friend-test</h3>
+        <div class="link-list">
+          <a href="https://friend-test-production.up.railway.app/">Landing<span>https://friend-test-production.up.railway.app/</span></a>
+          <a href="https://friend-test-production.up.railway.app/guide.html">How to use guide<span>…/guide.html</span></a>
+          <a href="https://friend-test-production.up.railway.app/p/P01/">P01 — low back<span>…/p/P01/</span></a>
+          <a href="https://friend-test-production.up.railway.app/p/P05/">P05 — leg-dominant<span>…/p/P05/</span></a>
+          <a href="https://friend-test-production.up.railway.app/preview.html">Clinic preview<span>…/preview.html</span></a>
+        </div>
+      </div>
+      <div class="link-block">
+        <h3>Full app</h3>
+        <div class="link-list">
+          <a href="https://web-production-2baf31.up.railway.app/">App home<span>https://web-production-2baf31.up.railway.app/</span></a>
+          <a href="https://web-production-2baf31.up.railway.app/login">Login<span>…/login</span></a>
+          <a href="https://web-production-2baf31.up.railway.app/p/demo-p01-harbour">Demo patient P01<span>…/p/demo-p01-harbour</span></a>
+          <a href="https://web-production-2baf31.up.railway.app/p/demo-p05-harbour">Demo patient P05<span>…/p/demo-p05-harbour</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Feedback -->
+    <div class="section-label">5 · What to feedback</div>
+    <div class="card">
+      <h2>Tell Sam about</h2>
+      <ul class="list">
+        <li>Confusing bits (navigation, buttons, where you got stuck)</li>
+        <li>Clinical wording that felt unclear or alarming</li>
+        <li>Hard-stop trust — does the urgent screen feel believable?</li>
+        <li>Would a clinic pay NZ$39–99/mo for this?</li>
+      </ul>
+      <p class="small muted" style="margin-top:10px">Message Sam directly — no in-app form in this pilot.</p>
+    </div>
+
+    <div class="nav-mini">
+      <a href="/">← Friend-test landing</a>
+      <a href="/guide.html">How to use</a>
+    </div>
+    <p class="footer-chip">Education only · Not a diagnosis</p>
+    <p class="small muted" style="text-align:center">Harbour Physio Grey Lynn · ClinicPacks team test</p>
+  </div>
+</body>
+</html>
